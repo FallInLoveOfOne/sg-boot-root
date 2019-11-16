@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/boot-dao/boot-dao.iml" filepath="$PROJECT_DIR$/boot-dao/boot-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-service/boot-service.iml" filepath="$PROJECT_DIR$/boot-service/boot-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/boot-web/boot-web.iml" filepath="$PROJECT_DIR$/boot-web/boot-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/sg-boot-root.iml" filepath="$PROJECT_DIR$/sg-boot-root.iml" />
     </modules>

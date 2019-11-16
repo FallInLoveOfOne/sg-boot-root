@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="boot-web" />
+        <module name="boot-service" />
         <module name="boot-dao" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="boot-dao" target="1.8" />
+      <module name="boot-service" target="1.8" />
       <module name="boot-web" target="1.8" />
       <module name="sg-boot-root" target="1.8" />
     </bytecodeTargetLevel>
@@ -19,6 +21,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="boot-dao" options="-parameters" />
+      <module name="boot-service" options="-parameters" />
       <module name="boot-web" options="-parameters" />
     </option>
   </component>
