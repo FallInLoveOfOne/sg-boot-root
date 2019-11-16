@@ -7,22 +7,32 @@
         <artifactId>sg-boot-root</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>boot-web</artifactId>
+    <artifactId>boot-dao</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
-    <name>boot-web</name>
-    <description>web</description>
+    <packaging>jar</packaging>
+    <name>boot-dao</name>
+    <description>boot-dao</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.1.1</version>
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -38,7 +48,7 @@
     </dependencies>
 
     <build>
-        <finalName>boot-web</finalName>
+        <finalName>boot-dao</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
